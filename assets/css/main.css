@@ -4687,36 +4687,41 @@ input, select, textarea {
 		}
 
 	}
-	
-	.tags {
-    list-style: none; /* Removes bullet points */
-    padding: 0;       /* Removes padding */
-    margin: 10px 0;   /* Adds margin above and below */
-    display: flex;    /* Displays tags in a row */
-    gap: 8px;         /* Space between tags */
-    flex-wrap: wrap;  /* Wraps to the next line if needed */
+
+.tags {
+    list-style: none;         /* Remove bullets */
+    padding: 0;               /* Remove padding */
+    margin: 15px 0 20px 0;    /* Add spacing between tags and the description */
+    display: flex;            /* Flexbox layout for inline tags */
+    gap: 10px;                /* Space between tags */
+    flex-wrap: wrap;          /* Wrap to a new line if needed */
 }
 
 .tags .tag {
-    display: inline-block;              /* Inline, but with padding */
-    padding: 6px 12px;                  /* Adds padding inside the tag */
-    background-color: #ff6f61;         /* Bright color for attention */
-    color: white;                      /* Text color */
-    font-size: 13px;                   /* Font size */
-    font-weight: bold;                 /* Bold text */
-    text-decoration: none;             /* No underline */
-    border-radius: 20px;               /* Rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    transition: all 0.3s ease;         /* Smooth transition effect */
+    display: inline-block;           /* Inline, with custom styling */
+    padding: 6px 14px;               /* Space inside the tags */
+    background-color: #f4f4f4;       /* Light gray background */
+    color: #333;                     /* Dark gray text */
+    font-size: 14px;                 /* Adjusted font size */
+    font-weight: 500;                /* Slightly bold text */
+    border: 1px solid #ddd;          /* Thin border for definition */
+    border-radius: 20px;             /* Rounded pill shape */
+    text-decoration: none;           /* Remove underlines */
+    transition: all 0.3s ease;       /* Smooth hover effect */
 }
 
 .tags .tag:hover {
-    background-color: #ff473a;         /* Darker shade on hover */
-    transform: translateY(-2px);       /* Lift effect */
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* More prominent shadow */
+    background-color: #007bff;       /* Blue background on hover */
+    color: white;                    /* White text on hover */
+    border-color: #007bff;           /* Border matches the background */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
 }
 
 .tags .tag:active {
-    transform: translateY(0);          /* Reset on click */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Reset shadow */
+    transform: scale(0.95);          /* Slight click effect */
+}
+
+/* Add spacing between the tags section and the download button */
+.actions.special {
+    margin-top: 20px;                /* Push the button down */
 }
