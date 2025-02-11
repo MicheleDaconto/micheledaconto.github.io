@@ -4725,3 +4725,9 @@ input, select, textarea {
 .actions.special {
     margin-top: 20px;                /* Push the button down */
 }
+.posts article {
+    background: #f4f4f4; /* Light gray background */
+    padding: 2em;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
