@@ -4731,3 +4731,9 @@ input, select, textarea {
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+.posts .image.fit img {
+    width: 100%; /* Assicura che l'immagine si adatti al contenitore */
+    height: 250px; /* Imposta un'altezza fissa per tutte le immagini */
+    object-fit: cover; /* Mantiene le proporzioni ritagliando l'immagine se necessario */
+    border-radius: 8px; /* Opzionale: arrotonda leggermente gli angoli */
+}
